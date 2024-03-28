@@ -1,5 +1,5 @@
 module "alb_controller" {
-  source          = "./Modules/AWS-ALB-Controller"
+  source          = "github.com/mohamedezz96/Terraform-Modules/EKS-Tools/AWS-ALB-Controller"
   eks_issuer      = data.aws_eks_cluster.eks_data.identity[0].oidc[0].issuer
   cluster_name    = "Testing" 
   alb_policy_name = "aws-alb-controller-policy"
