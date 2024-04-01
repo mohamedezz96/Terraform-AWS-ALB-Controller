@@ -49,4 +49,30 @@ terraform init
 terraform plan
 terraform apply --auto-approve
 ```
+### Usage
+#### Example Ingress YAML
 
+You can use the following YAML configuration for testing purposes:
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: example-ingress
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: example-service
+                port:
+                  number: 80
+
+`Warning` annotation "kubernetes.io/ingress.class" is deprecated, please use 'spec.ingressClassName' instead
