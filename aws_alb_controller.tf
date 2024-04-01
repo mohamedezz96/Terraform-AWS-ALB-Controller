@@ -6,5 +6,5 @@ module "alb_controller" {
   alb_policy_name                     = "aws-alb-controller-policy"
   alb_role_name                       = "aws-alb-controller-role"
   alb_sa_name                         = "aws-alb-controller-serviceaccount"
-  values_file                         = "./values/alb_controller.yaml"
+  values_file                         = "./values/aws_alb_controller.yaml"
 }
