@@ -39,3 +39,13 @@ To get started, follow these instructions:
 - `alb_role_name`: The name of the IAM role that will be created for the ALB controller.
 - `alb_sa_name`: The name of the Kubernetes serviceaccount that will be created for the ALB controller.
 - `values_file`: The path to the YAML file containing additional configuration values for the ALB controller.
+
+### Deployment
+
+Once configured, you can deploy the ALB controller by running:
+
+```bash
+terraform init
+terraform plan
+terraform apply --auto-approve
+```
