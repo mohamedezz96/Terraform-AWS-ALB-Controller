@@ -1,3 +1,3 @@
 data "aws_eks_cluster" "eks_data" {
-  name = "Testing"
+  name = module.alb_aws_controller.cluster_name
 }
