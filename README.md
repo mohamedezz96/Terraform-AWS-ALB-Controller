@@ -32,13 +32,13 @@ To get started, follow these instructions:
     cd Terraform-AWS-ALB-Controller
     ```
 ### Configuration
-#### aws_alb_controller.tf
-- `aws_alb_controller_version`: The version of the ALB controller Helm Chart to use.
-- `cluster_name`: The name of your EKS cluster.
-- `alb_policy_name`: The name of the IAM policy that will be created to be attached to the ALB controller.
-- `alb_role_name`: The name of the IAM role that will be created for the ALB controller.
-- `alb_sa_name`: The name of the Kubernetes serviceaccount that will be created for the ALB controller.
-- `values_file`: The path to the YAML file containing additional configuration values for the ALB controller.
+    #### aws_alb_controller.tf
+    - `aws_alb_controller_version`: The version of the ALB controller Helm Chart to use.
+    - `cluster_name`: The name of your EKS cluster.
+    - `alb_policy_name`: The name of the IAM policy that will be created to be attached to the ALB controller.
+    - `alb_role_name`: The name of the IAM role that will be created for the ALB controller.
+    - `alb_sa_name`: The name of the Kubernetes serviceaccount that will be created for the ALB controller.
+    - `values_file`: The path to the YAML file containing additional configuration values for the ALB controller.
 
 ### Deployment
 
