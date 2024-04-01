@@ -74,5 +74,6 @@ spec:
                 name: example-service
                 port:
                   number: 80
+```
 
 `Warning` annotation "kubernetes.io/ingress.class" is deprecated, please use 'spec.ingressClassName' instead
