@@ -102,4 +102,5 @@ spec:
                   number: 80
 ```
 
-Note: You can further configure the behavior of the AWS ALB controller by using annotations. Refer to the AWS ALB Ingress Controller Annotations documentation for more information.
+**Note:** You can further configure the behavior of the AWS ALB controller by using annotations. Refer to the [AWS ALB Ingress Controller Annotations documentation](https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.7/guide/ingress/annotations/) for more information.
+
