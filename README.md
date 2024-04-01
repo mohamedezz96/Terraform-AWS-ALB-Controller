@@ -77,3 +77,29 @@ spec:
 ```
 
 `Warning` annotation "kubernetes.io/ingress.class" is deprecated, please use 'spec.ingressClassName' instead
+
+so:
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: example-ingress
+  annotations:
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+spec:
+  ingressClassName: alb
+  rules:
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: example-service
+                port:
+                  number: 80
+```
+
+Note: You can further configure the behavior of the AWS ALB controller by using annotations. Refer to the AWS ALB Ingress Controller Annotations documentation for more information.
