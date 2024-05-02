@@ -10,14 +10,6 @@ To get started, follow these instructions:
 
 - Terraform installed on your local machine. You can download it from [here](https://www.terraform.io/downloads.html).
 - An AWS account with appropriate permissions to create resources.
-- Set the following Terraform variables as environment variables on your machine:
-
-    ```bash
-    export TF_VAR_cluster_ca_cert="EKS-CA"
-    export TF_VAR_cluster_endpoint="EKS-Endpoint"
-    ```
-
-    Replace `EKS-CA` with the actual cluster's CA certificate, and `EKS-Endpoint` with the actual endpoint of your EKS cluster.
 
 ### Installation
 
