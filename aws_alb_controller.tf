@@ -5,6 +5,5 @@ module "aws_alb_controller" {
   cluster_name                        = "Testing" 
   alb_policy_name                     = "aws-alb-controller-policy"
   alb_role_name                       = "aws-alb-controller-role"
-  alb_sa_name                         = "aws-alb-controller-serviceaccount"
   values_file                         = "./values/aws_alb_controller.yaml"
 }
