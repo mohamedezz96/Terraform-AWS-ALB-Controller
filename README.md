@@ -39,7 +39,7 @@ To get started, follow these instructions:
     terraform apply --auto-approve
     ```
 ### Usage
-To Test you AWS-ALB-Controller you can follow this link: https://docs.aws.amazon.com/eks/latest/userguide/alb-ingress.html
+To Test your AWS-ALB-Controller you can follow this link: https://docs.aws.amazon.com/eks/latest/userguide/alb-ingress.html
 
 #### Example Ingress YAML
 
