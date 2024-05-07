@@ -3,5 +3,5 @@ module "aws_alb_controller" {
   aws_alb_controller_version          = "1.7.2"
   eks_issuer                          = data.aws_eks_cluster.eks_data.identity[0].oidc[0].issuer
   cluster_name                        = "Testing" 
-  values_file                         = "./values/aws_alb_controller.yaml"
+  values_file                         = "./aws_alb_controller.yaml"
 }
